@@ -24,6 +24,6 @@ public class PlatoRequest {
     @Positive
     private Double precio;
     @NotNull
-    private Integer categoria_id;
+    private Long categoria_id;
     private Boolean disponible;
 }
