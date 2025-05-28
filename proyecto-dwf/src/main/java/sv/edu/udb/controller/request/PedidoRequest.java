@@ -15,9 +15,9 @@ import lombok.*;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PedidoRequest {
     @NotNull
-    private Integer cliente_id;
+    private Long cliente_id;
     @NotNull
-    private Integer mesa_id;
+    private Long mesa_id;
     @NotNull
     private String estado;
     @NotNull

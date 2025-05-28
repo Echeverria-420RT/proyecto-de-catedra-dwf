@@ -17,9 +17,9 @@ import lombok.Setter;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class DetallePedidoRequest {
     @NotNull
-    private Integer pedido_id;
+    private Long pedido_id;
     @NotNull
-    private Integer plato_id;
+    private Long plato_id;
     @NotNull
     @Min(1)
     private Integer cantidad;
