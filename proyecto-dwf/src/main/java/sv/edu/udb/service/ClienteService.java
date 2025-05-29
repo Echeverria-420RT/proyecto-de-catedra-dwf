@@ -10,5 +10,10 @@ public interface ClienteService {
     ClienteResponse findById(final Long id);
     ClienteResponse update(final ClienteRequest clienteRequest);
     ClienteResponse save(final Long id, final ClienteRequest clienteRequest);
+
+    ClienteResponse save(ClienteRequest request);
+
+    ClienteResponse update(Long id, ClienteRequest request);
+
     void delete(final Long id);
 }
