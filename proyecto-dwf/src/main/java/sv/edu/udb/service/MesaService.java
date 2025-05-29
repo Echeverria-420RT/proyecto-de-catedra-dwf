@@ -10,5 +10,10 @@ public interface MesaService {
     MesaResponse findById(final Long id);
     MesaResponse update(final MesaRequest mesaRequest);
     MesaResponse save(final Long id, final MesaRequest mesaRequest);
+
+    MesaResponse save(MesaRequest request);
+
+    MesaResponse update(Long id, MesaRequest request);
+
     void delete(final Long id);
 }
