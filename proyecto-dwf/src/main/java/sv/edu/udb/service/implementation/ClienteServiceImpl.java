@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public abstract class ClienteServiceImpl implements ClienteService {
+public class ClienteServiceImpl implements ClienteService {
 
     @NonNull
     private final ClienteRepository clienteRepository;

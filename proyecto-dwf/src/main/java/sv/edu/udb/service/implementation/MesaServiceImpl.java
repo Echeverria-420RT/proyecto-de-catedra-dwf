@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public abstract class MesaServiceImpl implements MesaService {
+public class MesaServiceImpl implements MesaService {
 
     @NonNull
     private final MesaRepository mesaRepository;
@@ -45,7 +45,6 @@ public abstract class MesaServiceImpl implements MesaService {
     public MesaResponse update(final Long id, final MesaRequest request) {
         Mesa mesaToUpdate = mesaRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Mesa no encontrada con ID " + id));
-
         mesaToUpdate.setNumero(request.getNumero());
         mesaToUpdate.setCapacidad(request.getCapacidad());
         mesaToUpdate.setEstado(request.getEstado());
